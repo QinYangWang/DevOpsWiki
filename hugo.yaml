@@ -1,6 +1,8 @@
 # Hugo configuration file
 title: DevOps Wiki
 
+enableInlineShortcodes: true
+
 # import hextra as module
 module:
   imports:
@@ -18,30 +20,36 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: ☁ Cloud Platform
+      pageRef: /cloud-platform
       weight: 1
-    - name: Programming Languages
-      pageRef: /languages
+    - name: 💵 FinOps
+      pageRef: /finops
       weight: 2
-    - name: About
-      pageRef: /about
+    - name: 🐳 Docker Swarm
+      pageRef: /docker-swarm
       weight: 3
+    - name: 🚢 Kubernetes
+      pageRef: /kubernetes
+      weight: 4
+    - name: 
+      pageRef: /about
+      weight: 5
     - name: Contact ↗
       url: "https://qinyang.wang"
-      weight: 4
+      weight: 6
     - name: Search
-      weight: 5
+      weight: 7
       params:
         type: search
     - name: GitHub
-      weight: 6
+      weight: 8
       url: "https://github.com/QinYangWang/DevOpsWiki"
       params:
         icon: github
     - name: Twitter
-      weight: 7
-      url: "https://twitter.com/qinyangwang1999"
+      weight: 9
+      url: "https://twitter.com/oukinyou"
       params:
         icon: x-twitter
 
@@ -56,4 +64,14 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/QinYangWang/DevOpsWiki/edit/main/content"
+    base: "https://github.com/QinYangWang/DevOpsWiki/edit/draft/content"
+
+  comments:
+    enable: false
+    type: giscus
+
+    giscus:
+      repo: QinYangWang/DevOpsWiki
+      repoId: R_kgDOMGFiiQ
+      category: General
+      categoryId: DIC_kwDOMGFiic4Cl1vQ
