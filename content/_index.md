@@ -3,15 +3,16 @@ title: My Site
 toc: false
 ---
 
-This is the landing page.
+Let's learn devops knowledge together!
 
-## Explore
+Welcome, fellow geek 👋 If you're impatient, just start here 👇
 
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+{{< cards cols="2" >}}
+  {{< card link="/" title="Dive into ☁ Cloud Platform" >}}
+  {{< card link="/" title="Dive into 💵 FinOps" >}}
 {{< /cards >}}
 
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< cards cols="2" >}}
+  {{< card link="/" title="Dive into 🐳 Docker Swarm" >}}
+  {{< card link="/" title="Dive into 🚢 Kubernetes" >}}
+{{< /cards >}}
